@@ -7,6 +7,7 @@
 
 <script>
 export default {
+    name: 'custom-button',
     data: () => {
         return {
             count: 0
@@ -15,6 +16,7 @@ export default {
     methods: {
         clickMe () {
             this.count++;
+            window.console.log(this.count);
         }
     }
 }

@@ -1,12 +1,16 @@
 <template>
   <div id="app">
-    <custom-button></custom-button>
+    <login-page />
   </div>
 </template>
 
 <script>
-export default {
+import Login from './pages/Login.vue'
 
+export default {
+  components: {
+    'login-page': Login
+  }
 }
 </script>
 
