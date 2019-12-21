@@ -1,12 +1,12 @@
 <template>
   <div id="app">
+    <custom-button></custom-button>
   </div>
 </template>
 
 <script>
-
 export default {
-  
+
 }
 </script>
 
