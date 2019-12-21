@@ -41,23 +41,23 @@
 </template>
 
 <script>
-export default {
-    data: () => {
-        return {
-            showRegister: false,
-            form: {
-                username: '',
-                password: ''
+    export default {
+        data: () => {
+            return {
+                showRegister: false,
+                form: {
+                    username: '',
+                    password: ''
+                }
+            }
+        },
+        methods: {
+            login () {
+                window.console.log('username', this.form.username)
+                window.console.log('userpassword', this.form.userpassword)
             }
         }
-    },
-    methods: {
-        login () {
-            window.console.log('username', this.form.username)
-            window.console.log('userpassword', this.form.userpassword)
-        }
     }
-}
 </script>
 
 <style scoped>
