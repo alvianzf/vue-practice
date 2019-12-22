@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <login-page />
+    <board-page />
   </div>
 </template>
 
 <script>
-import Login from './pages/Login.vue'
+// import Login from './pages/Login.vue'
+import Board from './pages/Board.vue'
 
 export default {
   components: {
-    'login-page': Login
+    // 'login-page': Login,
+    'board-page': Board
   }
 }
 </script>

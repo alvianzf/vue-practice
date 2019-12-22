@@ -28,6 +28,8 @@
                         >
                             Login
                         </button>
+
+                        {{ message }}
                     </td>
                 </tr>
             </table>
@@ -41,10 +43,21 @@
 </template>
 
 <script>
+import axios from 'axios';
+
     export default {
+        mounted() {
+            axios.get('http://backend.local/api/board').then(res => {
+                window.console.log(res.data)
+                this.message = res.data.result;
+            }).catch(err => {
+                window.console.log(err)
+            });
+        },
         data: () => {
             return {
                 showRegister: false,
+                message: '',
                 form: {
                     username: '',
                     password: ''
