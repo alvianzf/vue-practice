@@ -1,7 +1,7 @@
 <template>
     <div>
         <form @submit.prevent="login()" v-if="showRegister==false">
-            <table width="100">
+            <table class="table table-striped">
                 <tr>
                     <td width="150">Username</td>
                     <td>
@@ -25,11 +25,11 @@
                     <td>
                         <button 
                             type="submit"
+                            class="btn btn-info"
                         >
                             Login
                         </button>
 
-                        {{ message }}
                     </td>
                 </tr>
             </table>
